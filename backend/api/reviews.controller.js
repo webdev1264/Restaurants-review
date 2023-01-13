@@ -36,7 +36,7 @@ export default class ReviewsController {
         date
       );
 
-      var { error } = reviewResponse;
+      const { error } = reviewResponse;
       if (error) {
         res.status(400).json({ error });
       }
