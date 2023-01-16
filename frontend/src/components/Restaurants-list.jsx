@@ -85,7 +85,7 @@ const RestaurantsList = (props) => {
   return (
     <div>
       <div className="row pb-1">
-        <div className="input-group col-lg-4">
+        <div className="input-group col-lg-4" style={{width: "33.3%"}}>
           <input
             type="text"
             className="form-control"
@@ -103,7 +103,7 @@ const RestaurantsList = (props) => {
             </button>
           </div>
         </div>
-        <div className="input-group col-lg-4">
+        <div className="input-group col-lg-4" style={{width: "33.3%"}}>
           <input
             type="text"
             className="form-control"
@@ -121,7 +121,7 @@ const RestaurantsList = (props) => {
             </button>
           </div>
         </div>
-        <div className="input-group col-lg-4">
+        <div className="input-group col-lg-4" style={{width: "33.3%"}}>
           <select onChange={onChangeSearchCuisine}>
             {cuisines.map((cuisine, index) => {
               return (

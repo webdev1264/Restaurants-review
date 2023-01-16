@@ -33,13 +33,13 @@ function App() {
             </li>
             <li className="nav-item">
               {user ? (
-                <button
+                <div
                   onClick={logout}
                   className="nav-link"
                   style={{ cursor: "pointer" }}
                 >
                   Logout {user.name}
-                </button>
+                </div>
               ) : (
                 <Link to="/login" className="nav-link">
                   Login
@@ -51,10 +51,10 @@ function App() {
 
         <div className="container mt-3">
           <Routes>
-            <Route exact path={"/restaurants"} element={<RestaurantsList />} />
+            <Route index path={"/restaurants"} element={<RestaurantsList />} />
             <Route
               path="/restaurants/:id/review"
-              render={<AddReview user={user} />}
+              element={<AddReview user={user} />}
             />
             <Route
               path="/restaurants/:id"
