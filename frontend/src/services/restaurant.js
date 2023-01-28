@@ -32,4 +32,6 @@ class RestaurantDataService {
   }
 }
 
-export default new RestaurantDataService();
+const NewRestaurantDataService = new RestaurantDataService();
+
+export default NewRestaurantDataService;
